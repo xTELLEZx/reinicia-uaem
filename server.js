@@ -4,8 +4,7 @@ require("pdfkit");
 const express =
 require("express");
 
-const app =
-express();
+const app = express();
 
 app.use(
     express.static(__dirname)
@@ -25,7 +24,6 @@ require("xlsx");
 const fs = require("fs");
 const path = require("path");
 
-const app = express();
 const PORT =
 process.env.PORT || 3000;
 
