@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Panel Admin
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="admin.css"
+    >
+
+</head>
+
+<body>
+
+    <header class="topbar">
+
+      <button onclick="cerrarSesion()">
+
+    Cerrar Sesión
+
+     </button>
+
+        <h1>
+            🔧 Reinicia-UAEM — Panel Admin
+        </h1>
+
+        <button
+            onclick="window.location.href='index.html'"
+        >
+            Volver al sitio
+        </button>
+
+    </header>
+
+    <div class="container">
+
+        <!-- DONACIONES -->
+
+        <section class="card">
+
+            <h2>
+                Donaciones
+            </h2>
+
+            <div id="donacionesContainer">
+
+            </div>
+
+        </section>
+
+        <!-- SOLICITUDES -->
+
+        <section class="card">
+
+            <h2>
+                Solicitudes
+            </h2>
+
+            <div id="solicitudesContainer">
+
+            </div>
+
+        </section>
+
+        <!-- VOLUNTARIOS -->
+
+        <section class="card">
+
+            <h2>
+                Voluntarios
+            </h2>
+
+            <div id="voluntariosContainer">
+
+            </div>
+
+        </section>
+
+        <!-- CONTACTOS -->
+
+        <section class="card">
+
+            <h2>
+                Contactos / Mensajes
+            </h2>
+
+            <div id="contactosContainer">
+
+            </div>
+
+        </section>
+
+        <!-- INVENTARIO -->
+
+        <section class="card">
+
+            <h2>
+                Inventario
+            </h2>
+
+            <button id="eliminarInventario">
+
+                Eliminar Todo Inventario
+
+            </button>
+
+            <br><br>
+
+            <form id="agregarInventarioForm">
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Nombre"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="modelo"
+                    placeholder="Modelo"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="serie"
+                    placeholder="Serie"
+                    required
+                >
+
+                <button type="submit">
+
+                    Agregar
+
+                </button>
+
+            </form>
+
+            <br>
+
+            <form id="excelForm">
+
+                <input
+                    type="file"
+                    id="excel"
+                    accept=".xlsx,.xls"
+                    required
+                >
+
+                <button type="submit">
+
+                    Subir Excel
+
+                </button>
+
+            </form>
+
+            <br>
+
+            <button id="descargarExcel">
+
+                Descargar Inventario
+
+            </button>
+            <button
+    id="descargarPDF"
+>
+
+    Descargar PDF
+
+</button>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Modelo</th>
+                        <th>Serie</th>
+                        <th>Acciones</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="tablaInventario">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </div>
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>

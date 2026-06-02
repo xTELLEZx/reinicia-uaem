@@ -1,0 +1,203 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background: #ececec;
+
+}
+
+.topbar {
+
+    background: #045c46;
+    color: white;
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.topbar h1 {
+
+    margin: 0;
+    font-size: 24px;
+
+}
+
+.topbar button:hover {
+
+    background: #dcdcdc;
+
+}
+.container {
+
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+
+}
+
+.card {
+
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+}
+
+.card h2 {
+
+    margin-top: 0;
+
+}
+
+.donacion {
+
+    border: 1px solid #d9d9d9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background: #f7f7f7;
+
+}
+
+.donacion h3 {
+
+    margin: 0;
+    margin-bottom: 10px;
+
+}
+
+form {
+
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+input,
+button {
+
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+button {
+
+    background: #0b7a5a;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    opacity: 0.8;
+
+}
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+}
+
+table,
+th,
+td {
+
+    border: 1px solid #ccc;
+
+}
+
+th {
+
+    background: #045c46;
+    color: white;
+
+}
+
+th,
+td {
+
+    padding: 12px;
+    text-align: center;
+
+}
+.top-donacion {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.acciones {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.badge {
+
+    background: #f0e3a3;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+
+}
+
+.btn-ok {
+
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.btn-bad {
+
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.btn-delete {
+
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.btn-edit {
+
+    background: #0b7a5a;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+
+}

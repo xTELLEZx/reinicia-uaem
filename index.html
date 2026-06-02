@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Reinicia-UAEM
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            🔋 Reinicia-UAEM
+
+        </div>
+
+        <nav>
+
+            <a href="#inicio">
+                Inicio
+            </a>
+
+            <a href="#nosotros">
+                Nosotros
+            </a>
+
+            <a href="#donar">
+                Donar
+            </a>
+
+            <a href="#solicitar">
+                Solicitar
+            </a>
+
+            <a href="#voluntariado">
+                Voluntariado
+            </a>
+
+            <a href="#transparencia">
+                Transparencia
+            </a>
+
+            <a href="#contacto">
+                Contacto
+            </a>
+            
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section
+        class="hero"
+        id="inicio"
+    >
+
+        <div class="overlay">
+
+            <h1>
+
+                Conectando oportunidades,
+                cerrando brechas digitales
+
+            </h1>
+
+            <p>
+
+                Reinicia-UAEM busca reducir residuos
+                electrónicos y fomentar la equidad digital.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#donar">
+                    <button>
+                        Quiero Donar
+                    </button>
+                </a>
+
+                <a href="#solicitar">
+                    <button>
+                        Necesito un Equipo
+                    </button>
+                </a>
+
+                <a href="#voluntariado">
+                    <button>
+                        Ser Voluntario
+                    </button>
+                </a>
+
+            </div>
+
+            <h2>
+
+                Equipos donados:
+                <span id="contadorDonados">
+                    0
+                </span>
+
+            </h2>
+
+        </div>
+
+    </section>
+
+    <!-- NOSOTROS -->
+
+    <section
+        class="section"
+        id="nosotros"
+    >
+
+        <h2>
+            Acerca de Nosotros
+        </h2>
+
+        <p>
+
+            Somos estudiantes de la UAEM comprometidos
+            con la reutilización tecnológica y el apoyo
+            social mediante donaciones de equipos.
+
+        </p>
+
+    </section>
+
+    <!-- DONAR -->
+
+    <section
+        class="section green"
+        id="donar"
+    >
+
+        <h2>
+            ¿Cómo Donar?
+        </h2>
+
+        <p>
+            Llena el formulario para registrar tu donación.
+        </p>
+
+        <form id="donacionForm">
+
+            <input
+                type="text"
+                name="nombre"
+                placeholder="Nombre"
+                required
+            >
+
+            <input
+                type="email"
+                name="correo"
+                placeholder="Correo"
+                required
+            >
+
+            <input
+                type="text"
+                name="equipo"
+                placeholder="Equipo"
+                required
+            >
+
+            <select
+                name="estadoEquipo"
+                required
+            >
+
+                <option value="">
+                    Selecciona estado
+                </option>
+
+                <option value="Bueno">
+                    Bueno
+                </option>
+
+                <option value="Regular">
+                    Regular
+                </option>
+
+                <option value="Malo">
+                    Malo
+                </option>
+
+            </select>
+
+            <button type="submit">
+
+                Registrar Donación
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- SOLICITAR -->
+
+    <section
+        class="section"
+        id="solicitar"
+    >
+
+        <h2>
+            Solicitar un Equipo
+        </h2>
+
+        <p>
+            Llena la solicitud para recibir apoyo.
+        </p>
+
+        <form id="solicitudForm">
+
+            <input
+                type="text"
+                id="solNombre"
+                placeholder="Nombre"
+                required
+            >
+
+            <input
+                type="text"
+                id="solMatricula"
+                placeholder="Matrícula"
+                required
+            >
+
+            <input
+                type="text"
+                id="solCarrera"
+                placeholder="Carrera"
+                required
+            >
+
+            <textarea
+                id="solMotivo"
+                placeholder="Motivo"
+                required
+            ></textarea>
+
+            <button type="submit">
+
+                Enviar Solicitud
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- VOLUNTARIOS -->
+
+    <section
+        class="section green"
+        id="voluntariado"
+    >
+
+        <h2>
+            Únete como Voluntario
+        </h2>
+
+        <p>
+            Ayuda a reacondicionar equipos y apoyar estudiantes.
+        </p>
+
+        <form id="voluntarioForm">
+
+            <input
+                type="text"
+                id="volNombre"
+                placeholder="Nombre completo"
+                required
+            >
+
+            <input
+                type="email"
+                id="volCorreo"
+                placeholder="Correo"
+                required
+            >
+
+            <input
+                type="text"
+                id="volArea"
+                placeholder="Área de interés"
+                required
+            >
+
+            <button type="submit">
+
+                Registrar Voluntario
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- TRANSPARENCIA -->
+
+    <section
+        class="section"
+        id="transparencia"
+    >
+
+        <h2>
+            Transparencia
+        </h2>
+
+        <p>
+
+            Puedes consultar nuestros datos y estadísticas
+            en el panel administrativo.
+
+        </p>
+
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section
+        class="section green"
+        id="contacto"
+    >
+
+        <h2>
+            Contacto
+        </h2>
+
+        <form id="contactoForm">
+
+            <input
+                type="text"
+                id="conNombre"
+                placeholder="Nombre"
+                required
+            >
+
+            <input
+                type="email"
+                id="conCorreo"
+                placeholder="Correo"
+                required
+            >
+
+            <textarea
+                id="conMensaje"
+                placeholder="Mensaje"
+                required
+            ></textarea>
+
+            <button type="submit">
+
+                Enviar Mensaje
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
