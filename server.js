@@ -1,6 +1,9 @@
 const PDFDocument =
 require("pdfkit");
 const express = require("express");
+
+const app = express();
+
 app.use(express.static(__dirname));
 const cors = require("cors");
 const sqlite3 = require("sqlite3").verbose();
