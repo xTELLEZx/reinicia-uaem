@@ -166,3 +166,15 @@ textarea {
     color: #5cffb2;
 
 }
+.footer {
+
+    background: #044c3c;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-size: 14px;
+
+}
