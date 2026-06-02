@@ -1,14 +1,27 @@
 const PDFDocument =
 require("pdfkit");
-const express = require("express");
 
-const app = express();
+const express =
+require("express");
 
-app.use(express.static(__dirname));
-const cors = require("cors");
-const sqlite3 = require("sqlite3").verbose();
-const multer = require("multer");
-const XLSX = require("xlsx");
+const app =
+express();
+
+app.use(
+    express.static(__dirname)
+);
+
+const cors =
+require("cors");
+
+const sqlite3 =
+require("sqlite3").verbose();
+
+const multer =
+require("multer");
+
+const XLSX =
+require("xlsx");
 const fs = require("fs");
 const path = require("path");
 
